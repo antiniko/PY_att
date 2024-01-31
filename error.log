@@ -1,0 +1,306 @@
+ERROR | 2024-01-31 23:44:58,647 | wrapper | LogData: <__main__.LogData object at 0x000002BED9BA0D10> | Message: Ошибка в аргументах командной строки: Missing or incorrect command-line arguments.
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 52, in parse_args
+    args = parser.parse_args()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1891, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1924, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2164, in _parse_known_args
+    self.error(_('the following arguments are required: %s') %
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2655, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2642, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 63, in main
+    args = parse_args()
+           ^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 56, in parse_args
+    raise argparse.ArgumentError(None, "Missing or incorrect command-line arguments.")
+argparse.ArgumentError: Missing or incorrect command-line arguments.
+
+ERROR | 2024-01-31 23:45:55,423 | wrapper | LogData: <__main__.LogData object at 0x000001F929FA4260> | Message: Ошибка в аргументах командной строки: Missing or incorrect command-line arguments.
+Traceback (most recent call last):
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1924, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2136, in _parse_known_args
+    start_index = consume_optional(start_index)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2076, in consume_optional
+    take_action(action, args, option_string)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1984, in take_action
+    argument_values = self._get_values(action, argument_strings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2523, in _get_values
+    self._check_value(action, value)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2578, in _check_value
+    raise ArgumentError(action, msg % args)
+argparse.ArgumentError: argument --animal: invalid choice: 'bish' (choose from 'bird', 'fish', 'mammal')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 52, in parse_args
+    args = parser.parse_args()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1891, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1926, in parse_known_args
+    self.error(str(err))
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2655, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2642, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 63, in main
+    args = parse_args()
+           ^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 56, in parse_args
+    raise argparse.ArgumentError(None, "Missing or incorrect command-line arguments.")
+argparse.ArgumentError: Missing or incorrect command-line arguments.
+
+ERROR | 2024-01-31 23:46:04,865 | wrapper | LogData: <__main__.LogData object at 0x0000016238914260> | Message: Ошибка в аргументах командной строки: Missing or incorrect command-line arguments.
+Traceback (most recent call last):
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1924, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2136, in _parse_known_args
+    start_index = consume_optional(start_index)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2076, in consume_optional
+    take_action(action, args, option_string)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1984, in take_action
+    argument_values = self._get_values(action, argument_strings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2523, in _get_values
+    self._check_value(action, value)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2578, in _check_value
+    raise ArgumentError(action, msg % args)
+argparse.ArgumentError: argument --animal: invalid choice: 'bish' (choose from 'bird', 'fish', 'mammal')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 52, in parse_args
+    args = parser.parse_args()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1891, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1926, in parse_known_args
+    self.error(str(err))
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2655, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2642, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 63, in main
+    args = parse_args()
+           ^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 56, in parse_args
+    raise argparse.ArgumentError(None, "Missing or incorrect command-line arguments.")
+argparse.ArgumentError: Missing or incorrect command-line arguments.
+
+ERROR | 2024-01-31 23:46:09,129 | wrapper | LogData: <__main__.LogData object at 0x00000213D9304260> | Message: Ошибка в аргументах командной строки: Missing or incorrect command-line arguments.
+Traceback (most recent call last):
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1924, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2136, in _parse_known_args
+    start_index = consume_optional(start_index)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2076, in consume_optional
+    take_action(action, args, option_string)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1984, in take_action
+    argument_values = self._get_values(action, argument_strings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2523, in _get_values
+    self._check_value(action, value)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2578, in _check_value
+    raise ArgumentError(action, msg % args)
+argparse.ArgumentError: argument --animal: invalid choice: 'bish' (choose from 'bird', 'fish', 'mammal')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 52, in parse_args
+    args = parser.parse_args()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1891, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1926, in parse_known_args
+    self.error(str(err))
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2655, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2642, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 63, in main
+    args = parse_args()
+           ^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 56, in parse_args
+    raise argparse.ArgumentError(None, "Missing or incorrect command-line arguments.")
+argparse.ArgumentError: Missing or incorrect command-line arguments.
+
+ERROR | 2024-01-31 23:46:56,591 | wrapper | LogData: <__main__.LogData object at 0x00000173D3724230> | Message: Ошибка в аргументах командной строки: Missing or incorrect command-line arguments.
+Traceback (most recent call last):
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1924, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2136, in _parse_known_args
+    start_index = consume_optional(start_index)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2076, in consume_optional
+    take_action(action, args, option_string)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1984, in take_action
+    argument_values = self._get_values(action, argument_strings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2523, in _get_values
+    self._check_value(action, value)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2578, in _check_value
+    raise ArgumentError(action, msg % args)
+argparse.ArgumentError: argument --animal: invalid choice: 'bishhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh' (choose from 'bird', 'fish', 'mammal')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 52, in parse_args
+    args = parser.parse_args()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1891, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 1926, in parse_known_args
+    self.error(str(err))
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2655, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Users\Piy\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 2642, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 63, in main
+    args = parse_args()
+           ^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 56, in parse_args
+    raise argparse.ArgumentError(None, "Missing or incorrect command-line arguments.")
+argparse.ArgumentError: Missing or incorrect command-line arguments.
+
+ERROR | 2024-01-31 23:58:11,214 | wrapper | LogData: <__main__.LogData object at 0x000001B7C0E64260> | Message: Ошибка: name 'Fish' is not defined (Аргументы: ())
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 68, in main
+    animal_instance = Fish(name=args.name, max_depth=args.max_depth)
+                      ^^^^
+NameError: name 'Fish' is not defined
+
+ERROR | 2024-01-31 23:59:03,370 | wrapper | LogData: <__main__.LogData object at 0x00000280CAD84260> | Message: Ошибка: name 'Bird' is not defined (Аргументы: ())
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 66, in main
+    animal_instance = Bird(name=args.name, wingspan=args.wingspan)
+                      ^^^^
+NameError: name 'Bird' is not defined
+
+ERROR | 2024-01-31 23:59:42,075 | wrapper | LogData: <__main__.LogData object at 0x00000234CE404260> | Message: Ошибка: name 'Fish' is not defined (Аргументы: ())
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 68, in main
+    animal_instance = Fish(name=args.name, max_depth=args.max_depth)
+                      ^^^^
+NameError: name 'Fish' is not defined
+
+ERROR | 2024-01-31 23:59:52,067 | wrapper | LogData: <__main__.LogData object at 0x00000215D1D34260> | Message: Ошибка: name 'Fish' is not defined (Аргументы: ())
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 68, in main
+    animal_instance = Fish(name=args.name, max_depth=args.max_depth)
+                      ^^^^
+NameError: name 'Fish' is not defined
+
+ERROR | 2024-02-01 00:05:07,074 | wrapper | LogData: <__main__.LogData object at 0x000002E83000B9E0> | Message: Ошибка в аргументах командной строки: Ошибка в аргументах командной строки: Max depth must be a non-negative value.
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 55, in parse_args
+    raise argparse.ArgumentError(None, "Max depth must be a non-negative value.")
+argparse.ArgumentError: Max depth must be a non-negative value.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 70, in main
+    args = parse_args()
+           ^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 65, in parse_args
+    raise argparse.ArgumentError(None, f"Ошибка в аргументах командной строки: {e}")
+argparse.ArgumentError: Ошибка в аргументах командной строки: Max depth must be a non-negative value.
+
+ERROR | 2024-02-01 00:10:18,737 | wrapper | LogData: <__main__.LogData object at 0x000001F58F0C3110> | Message: Ошибка в аргументах командной строки: Ошибка в аргументах командной строки: Максимальная глубина должна быть неотрицательным числом.
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 55, in parse_args
+    raise argparse.ArgumentError(None, "Максимальная глубина должна быть неотрицательным числом.")
+argparse.ArgumentError: Максимальная глубина должна быть неотрицательным числом.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 28, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 70, in main
+    args = parse_args()
+           ^^^^^^^^^^^^
+  File "C:\Users\Piy\PycharmProjects\pythonProject\GB\HW\animal.py", line 65, in parse_args
+    raise argparse.ArgumentError(None, f"Ошибка в аргументах командной строки: {e}")
+argparse.ArgumentError: Ошибка в аргументах командной строки: Максимальная глубина должна быть неотрицательным числом.
+
