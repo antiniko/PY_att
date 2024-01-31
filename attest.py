@@ -21,7 +21,7 @@ class LogData:
 
 logging.basicConfig(filename='error.log', level=logging.ERROR,
                     format='%(levelname)s | %(asctime)s | %(funcName)s | LogData: %(log_data)s | Message: %(message)s',
-                    encoding='utf-8')  # Указываем кодировку
+                    encoding='utf-8')  
 
 
 def logging_decorator(func):
